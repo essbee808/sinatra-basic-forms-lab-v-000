@@ -1,3 +1,6 @@
 <body>
-
+<% @hash["age"] = @hash.delete("months_old")%>
+  <% @hash.each do |k,v| %>
+      <h2><%= "#{k.capitalize}: #{v}" %></h2>
+  <% end %>
 </body>
