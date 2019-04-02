@@ -14,6 +14,7 @@ class App < Sinatra::Base
   post '/puppy' do
     @hash = params
     @puppy = Puppy.new(@hash)
+    binding.pry
     erb :display_puppy  
   end
 end
