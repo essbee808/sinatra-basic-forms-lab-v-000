@@ -1,10 +1,5 @@
-<!--<body>
-  <p>Puppy Name: puppy name</p>
-  <p>Puppy Breed: puppy breed </p>
-  <p>Puppy Age:  puppy months</p>
-</body> -->
 <body>
-<% @hash.each do |k,v| %>
-    <p><%= k %>: <%= v %></p>
-<% end %>
-</body>
+<p> Puppy Name: <%= "#{@puppy.name}" %></p>
+<p> Puppy Breed: <%= "#{@puppy.breed}" %></p>
+<p> Puppy Age: <%= "#{@puppy.months_old}" %> </p>
+</body
